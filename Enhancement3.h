@@ -8,6 +8,7 @@ class Enhancement3 {
 public:
     Enhancement3();  // Constructor
     ~Enhancement3(); // Destructor
+    // Function to check for isolated areas in the maze
     void checkForIsolatedAreas(const std::vector<std::vector<int>>& maze);
 };
 

@@ -244,7 +244,7 @@ int main(int argc, char **argv)
                         // 0, x-length, 0, z-length 
                         // where xlen and zlen are inputted by the user 
 
-                        // check maze for isolated areas
+                        // check maze for isolated areas (call the function via PrintMaze)
                         enh3.checkForIsolatedAreas(myMaze.PrintMaze(xlen, zlen));
 
                         printMainMenu();
