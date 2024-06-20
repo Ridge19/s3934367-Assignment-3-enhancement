@@ -243,9 +243,14 @@ int main(int argc, char **argv)
                         myMaze.PrintMaze(xlen, zlen);
                         // 0, x-length, 0, z-length 
                         // where xlen and zlen are inputted by the user 
+                        cout << "** end printing maze **" << endl;
 
+                        cout << "** checking maze for isolated areas and loops **" << endl;
+                        cout << endl;
                         // check maze for isolated areas (call the function via PrintMaze)
                         enh3.checkForIsolatedAreas(myMaze.PrintMaze(xlen, zlen));
+                        // check maze for loops (call the function via PrintMaze)
+                        enh3.checkForLoops(myMaze.PrintMaze(xlen, zlen));
 
                         printMainMenu();
                     }
