@@ -2,23 +2,19 @@
 
 -- just a template, will update and make it look prettier later -- 
 
--- PROGRAMMING STUDIO 2 ASSIGNMENT 3 --<br/>
+-- PROGRAMMING STUDIO 2 ASSIGNMENT 3 ENHANCEMENTS--<br/>
+Team member 1, Enhancement 3: Validate the user input maze
 Generating a Maze in Minecraft with mcpp and C++  
 
--- GROUP MEMBERS --<br/>
+-- ENHANCEMENT DONE BY: --<br/>
 Ridge Tagala (s3934367@student.rmit.edu.au)<br/>
-Sadara Manoj (s4013740@student.rmit.edu.au)<br/>
-Judy Ayoubi  (s3905922@student.rmit.edu.au)<br/> 
 
 -- INFORMATION --<br/>
 before running the program:<br/>
 use makefile to automatically compile all .cpp file by typing 'make' in the terminal 
 
 -- PROGRAM MODES --<br/>
-
- -- testing mode --<br/> 
-- a program testmode, to enable testmode, use the flag -testing when executing (./mazeRunner -testing)
-- includes a maze generation algorithm (recursive division) with NO randomness and at set coordinates.<br/>
+-- THERE IS NO TESTING MODE AVAILABLE
  -- normal mode --<br/>
 - the programs normal executable mode. to execute the program, type ./mazeRunner in terminal
 - includes a maze generation algorithm (recursive division) WITH randomness and at the coordinates set by the player. 
