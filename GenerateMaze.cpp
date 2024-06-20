@@ -106,7 +106,7 @@ void GenerateMaze::Recursive(std::vector<std::vector<char>>& structure, unsigned
 }
 
 void GenerateMaze::PrintMaze(int rows, int columns) {
-        // Seed the random number generator
+    // Seed the random number generator
     std::mt19937 gen(std::time(nullptr));
 
     // Create a 2D vector to store the structure
