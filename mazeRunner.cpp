@@ -12,6 +12,8 @@
 #include "testmode.h"
 // maze generation 
 #include "GenerateMaze.h"
+// Enhancement 3
+#include "Enhancement3.h"
 
 using std::cin;
 using std::cout;
@@ -225,6 +227,7 @@ int main(int argc, char **argv)
             
                     // Declare or define the 'checkMaze' function before using it
                     GenerateMaze myMaze;
+                    Enhancement3 enh3;
 
                     myMaze.checkMaze(xlen, zlen);
 
@@ -240,6 +243,9 @@ int main(int argc, char **argv)
                         myMaze.PrintMaze(xlen, zlen);
                         // 0, x-length, 0, z-length 
                         // where xlen and zlen are inputted by the user 
+
+                        // check maze for isolated areas
+                        enh3.checkForIsolatedAreas(myMaze.PrintMaze(xlen, zlen));
 
                         printMainMenu();
                     }

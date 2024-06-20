@@ -8,6 +8,8 @@
 #include "GenerateMaze.h" // generate maze file
 #include <time.h>
 
+// enhancement 
+#include "Enhancement3.h"
 
 // default constructor???
 GenerateMaze::GenerateMaze(unsigned int x_min, unsigned int x_max, unsigned int z_min, unsigned int z_max, mcpp::Coordinate basePoint) {
@@ -24,7 +26,6 @@ GenerateMaze::GenerateMaze(unsigned int x_min, unsigned int x_max, unsigned int 
 GenerateMaze::~GenerateMaze() {
 }
 
-
 bool GenerateMaze::checkMaze(unsigned int xlen, unsigned int zlen) {
     // base case - if maze L or W < 3
     if (xlen < 3 || zlen < 3) {
@@ -33,7 +34,6 @@ bool GenerateMaze::checkMaze(unsigned int xlen, unsigned int zlen) {
         return true;
     }
 }
-
 
 void GenerateMaze::Recursive(std::vector<std::vector<char>>& structure, unsigned int startRow, unsigned int endRow, unsigned int startCol, unsigned int endCol, std::mt19937& gen) {
     // Base case: if any dimension is too small, return
@@ -105,12 +105,13 @@ void GenerateMaze::Recursive(std::vector<std::vector<char>>& structure, unsigned
     }
 }
 
-void GenerateMaze::PrintMaze(int rows, int columns) {
+std::vector<std::vector<int>> GenerateMaze::PrintMaze(int rows, int columns) {
     // Seed the random number generator
     std::mt19937 gen(std::time(nullptr));
 
     // Create a 2D vector to store the structure
     std::vector<std::vector<char>> structure(rows, std::vector<char>(columns, '.'));
+    std::vector<std::vector<int>> maze(rows, std::vector<int>(columns, 0));
 
     // Place the borders
     for (int i = 0; i < rows; ++i) {
@@ -126,6 +127,14 @@ void GenerateMaze::PrintMaze(int rows, int columns) {
     Recursive(structure, 1, rows - 2, 1, columns - 2, gen); // Start with inner area, leaving border intact
 
     structure[0][1] = '.'; // Entrance
+
+    // Convert char maze to int maze for output
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < columns; ++j) {
+            maze[i][j] = (structure[i][j] == 'x') ? 1 : 0;
+        }
+    }
+
     // Print the structure
     for (const auto& row : structure) {
         for (char cell : row) {
@@ -133,7 +142,6 @@ void GenerateMaze::PrintMaze(int rows, int columns) {
         }
         std::cout << std::endl;
     }
+
+    return maze;
 }
-
-
-

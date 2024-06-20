@@ -3,6 +3,16 @@
 #include <vector>
 #include <stack>
 
+// Constructor
+Enhancement3::Enhancement3() {
+}
+
+// Destructor
+Enhancement3::~Enhancement3() {
+}
+
+
+
 void Enhancement3::checkForIsolatedAreas(const std::vector<std::vector<int>>& maze) {
     int rows = maze.size();
     if (rows == 0) return;

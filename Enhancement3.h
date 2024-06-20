@@ -2,10 +2,12 @@
 #define ENHANCEMENT3_H
 
 #include <vector>
+#include "GenerateMaze.h"
 
 class Enhancement3 {
 public:
-    void exampleFunction();
+    Enhancement3();  // Constructor
+    ~Enhancement3(); // Destructor
     void checkForIsolatedAreas(const std::vector<std::vector<int>>& maze);
 };
 

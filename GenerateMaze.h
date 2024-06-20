@@ -19,7 +19,7 @@ public:
     // destructor
     ~GenerateMaze();
     
-    void PrintMaze(int rows, int columns); //print maze?? 
+    std::vector<std::vector<int>> PrintMaze(int rows, int columns); //print maze?? 
     bool checkMaze(unsigned int xlen, unsigned int zlen); //checks if maze is < 3
     void Recursive(std::vector<std::vector<char>>& structure, unsigned int startRow, unsigned int endRow, unsigned int startCol, unsigned int endCol, std::mt19937& gen); //recursive division algorithm
 private:
