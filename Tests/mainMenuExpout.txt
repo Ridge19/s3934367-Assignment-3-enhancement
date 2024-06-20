@@ -1,0 +1,86 @@
+------------- MAIN MENU -------------
+1) Create a Maze
+2) Build Maze in MineCraft
+3) Solve Maze
+4) Show Team Information
+5) Exit
+
+Enter Menu item to continue: 
+
+Invalid MainMenuChoice! number must be between 1 and 5!
+
+------------- MAIN MENU -------------
+1) Create a Maze
+2) Build Maze in MineCraft
+3) Solve Maze
+4) Show Team Information
+5) Exit
+
+Enter Menu item to continue: 
+
+Invalid input, must be an integer. Please try again
+------------- MAIN MENU -------------
+1) Create a Maze
+2) Build Maze in MineCraft
+3) Solve Maze
+4) Show Team Information
+5) Exit
+
+Enter Menu item to continue: 
+
+Invalid input, must be an integer. Please try again
+
+------------- MAIN MENU -------------
+1) Create a Maze
+2) Build Maze in MineCraft
+3) Solve Maze
+4) Show Team Information
+5) Exit
+
+Enter Menu item to continue: 
+
+Invalid input, must be an integer. Please try again
+------------- MAIN MENU -------------
+1) Create a Maze
+2) Build Maze in MineCraft
+3) Solve Maze
+4) Show Team Information
+5) Exit
+
+Enter Menu item to continue: 
+
+Invalid input, must be an integer. Please try again
+------------- MAIN MENU -------------
+1) Create a Maze
+2) Build Maze in MineCraft
+3) Solve Maze
+4) Show Team Information
+5) Exit
+
+Enter Menu item to continue: 
+
+------------- MAIN MENU -------------
+1) Create a Maze
+2) Build Maze in MineCraft
+3) Solve Maze
+4) Show Team Information
+5) Exit
+
+Enter Menu item to continue: 
+
+Invalid MainMenuChoice! number must be between 1 and 5!
+
+------------- MAIN MENU -------------
+1) Create a Maze
+2) Build Maze in MineCraft
+3) Solve Maze
+4) Show Team Information
+5) Exit
+
+Enter Menu item to continue: 
+
+
+The End!
+
+
+
